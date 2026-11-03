@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohan C | Engineering Student & Aspiring Developer</title>
+  <meta name="description" content="Personal portfolio of Mohan C, an engineering student at BGS College of Engineering and Technology and aspiring developer passionate about AI, web development, and problem solving.">
+  
+  <!-- Fonts: Newsreader (Editorial Serif) & Plus Jakarta Sans (Clean Modern Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Favicon SVG (Minimalist terracotta monogram) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23D96B43'/%3E%3Ctext x='16' y='21' font-size='16' font-family='serif' fill='%23FFFFFF' text-anchor='middle'%3E✦%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <!-- Top Reading Progress Indicator -->
+  <div id="scroll-progress" class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Ambient Navigation Header -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      <a href="#home" class="brand-logo" aria-label="Home">
+        <span class="logo-mark">✦</span>
+        <span class="brand-name">Mohan C</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action items -->
+      <div class="header-actions">
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-toggle" class="mobile-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ==============================================
+         1. HOME / HERO SECTION
+         ============================================== -->
+    <section id="home" class="hero-section section-padding">
+      <div class="container hero-container">
+        
+        <!-- Live status badge -->
+        <div class="hero-status-pill fade-in-up">
+          <span class="status-dot"></span>
+          <span class="status-text">Undergraduate Engineering &bull; Exploring &amp; Learning</span>
+        </div>
+
+        <div class="hero-content">
+          <h1 class="hero-greeting fade-in-up delay-1">
+            Hi, I'm <span class="highlight-text">Mohan C</span>.
+          </h1>
+
+          <p class="hero-subtitle fade-in-up delay-2">
+            <strong>Engineering Student</strong> <span class="bullet-sep">&bull;</span> 
+            <strong>Aspiring Developer</strong> <span class="bullet-sep">&bull;</span> 
+            <strong>Technology Enthusiast</strong>
+          </p>
+
+          <p class="hero-lead-curiosity fade-in-up delay-3">
+            Curious about technology. Passionate about learning. Always exploring what's possible.
+          </p>
+
+          <p class="hero-description fade-in-up delay-4">
+            I'm an engineering student who enjoys programming, exploring AI technologies, understanding how things work, and discovering new ways to solve problems.
+          </p>
+
+          <p class="hero-welcome fade-in-up delay-4">
+            Welcome to my digital space, where I share my interests, technical skills, educational journey, and future ambitions.
+          </p>
+
+          <!-- Tagline Callout -->
+          <div class="tagline-badge fade-in-up delay-5">
+            <span class="tagline-label">Tagline</span>
+            <div class="tagline-pills">
+              <span class="pill-word">Think</span>
+              <span class="pill-arrow">&rarr;</span>
+              <span class="pill-word">Explore</span>
+              <span class="pill-arrow">&rarr;</span>
+              <span class="pill-word">Learn</span>
+              <span class="pill-arrow">&rarr;</span>
+              <span class="pill-word">Create</span>
+            </div>
+          </div>
+
+          <!-- Hero Action CTAs -->
+          <div class="hero-cta-group fade-in-up delay-6">
+            <a href="#about" class="btn btn-primary">
+              <span>Read About Me</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Get in Touch</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Aside Card / Meta Note -->
+        <aside class="hero-aside-card fade-in-up delay-4" aria-label="Quick Highlights">
+          <div class="aside-card-header">
+            <span class="aside-mono-badge">SNAPSHOT</span>
+            <span class="aside-timestamp">Active Learning Phase</span>
+          </div>
+          <div class="aside-card-body">
+            <div class="snapshot-row">
+              <span class="snapshot-label">Focus</span>
+              <span class="snapshot-val">Python &bull; Web &bull; AI Tools</span>
+            </div>
+            <div class="snapshot-row">
+              <span class="snapshot-label">College</span>
+              <span class="snapshot-val">BGS College of Engg &amp; Tech</span>
+            </div>
+            <div class="snapshot-row">
+              <span class="snapshot-label">Base</span>
+              <span class="snapshot-val">Bengaluru, Karnataka, India</span>
+            </div>
+            <div class="snapshot-row">
+              <span class="snapshot-label">Philosophy</span>
+              <span class="snapshot-val italic">"Stay curious, keep exploring"</span>
+            </div>
+          </div>
+          <div class="aside-card-footer">
+            <span class="dot-indicator"></span>
+            <span>Open to student collaborations &amp; mentorship</span>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- ==============================================
+         2. ABOUT ME SECTION
+         ============================================== -->
+    <section id="about" class="section-padding">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">02 / About Me</span>
+          <h2 class="section-title">A Little About Myself</h2>
+          <p class="section-subtitle">Driven by curiosity, analytical thinking, and the urge to understand the foundations.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Main narrative column -->
+          <div class="about-narrative reveal-on-scroll">
+            <div class="prose-card">
+              <p class="lead-text">
+                I'm an engineering student with a strong curiosity about technology and the digital world.
+              </p>
+              <p>
+                My interests include programming, artificial intelligence, web development, and exploring innovative tools and applications.
+              </p>
+              <p>
+                I enjoy understanding the concepts behind technology rather than simply using it. I like experimenting with different tools, learning new skills, and discovering how ideas can become practical solutions.
+              </p>
+              <p>
+                I'm someone who believes that continuous learning and curiosity are essential for personal and professional growth.
+              </p>
+            </div>
+
+            <!-- Mindset & Goal Cards -->
+            <div class="mindset-goal-container">
+              
+              <!-- Mindset Card -->
+              <div class="paper-card mindset-card">
+                <div class="card-icon-tag">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 16v-4"></path>
+                    <path d="M12 8h.01"></path>
+                  </svg>
+                  <span>My Mindset</span>
+                </div>
+                <p class="card-statement">
+                  "I believe that every new challenge is an opportunity to learn something valuable. I prefer understanding how things work, experimenting with ideas, and improving through experience."
+                </p>
+              </div>
+
+              <!-- Goal Card -->
+              <div class="paper-card goal-card">
+                <div class="card-icon-tag">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <circle cx="12" cy="12" r="6"></circle>
+                    <circle cx="12" cy="12" r="2"></circle>
+                  </svg>
+                  <span>My Goal</span>
+                </div>
+                <p class="card-statement">
+                  "My goal is to continuously improve my technical abilities, gain practical experience, explore new technologies, and eventually create meaningful applications and solutions."
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Sidebar: Interests & Chess Thinking -->
+          <div class="about-sidebar reveal-on-scroll delay-1">
+            
+            <div class="paper-card interests-card">
+              <div class="card-header-clean">
+                <h3 class="card-title-serif">My Interests</h3>
+                <span class="badge-count">6 Areas</span>
+              </div>
+              
+              <ul class="interests-list">
+                <li class="interest-item">
+                  <span class="interest-bullet">01</span>
+                  <div class="interest-details">
+                    <span class="interest-name">Programming &amp; Software Development</span>
+                    <span class="interest-sub">Building logic and functional computer programs</span>
+                  </div>
+                </li>
+                <li class="interest-item">
+                  <span class="interest-bullet">02</span>
+                  <div class="interest-details">
+                    <span class="interest-name">Artificial Intelligence &amp; Emerging Tech</span>
+                    <span class="interest-sub">Modern LLMs, neural networks, and generative tools</span>
+                  </div>
+                </li>
+                <li class="interest-item">
+                  <span class="interest-bullet">03</span>
+                  <div class="interest-details">
+                    <span class="interest-name">Web Development</span>
+                    <span class="interest-sub">Crafting responsive, clean, and interactive interfaces</span>
+                  </div>
+                </li>
+                <li class="interest-item">
+                  <span class="interest-bullet">04</span>
+                  <div class="interest-details">
+                    <span class="interest-name">Exploring Innovative Digital Tools</span>
+                    <span class="interest-sub">Modern IDEs, developer workflows, and automation</span>
+                  </div>
+                </li>
+                <li class="interest-item">
+                  <span class="interest-bullet">05</span>
+                  <div class="interest-details">
+                    <span class="interest-name">Problem-Solving &amp; Logical Thinking</span>
+                    <span class="interest-sub">Deconstructing complex systems into core principles</span>
+                  </div>
+                </li>
+                <li class="interest-item special-highlight">
+                  <span class="interest-bullet">06</span>
+                  <div class="interest-details">
+                    <span class="interest-name">Chess &amp; Strategic Thinking</span>
+                    <span class="interest-sub">Evaluating candidate moves, foresight, and disciplined tactics</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Chess Quote Mini-Card -->
+            <div class="quote-aside-card">
+              <div class="quote-symbol">♟</div>
+              <p class="quote-body">
+                "In chess as in programming: calculate deep, respect fundamentals, and appreciate the elegance of simple, deliberate moves."
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==============================================
+         3. SKILLS SECTION
+         ============================================== -->
+    <section id="skills" class="section-padding bg-alt">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">03 / Technical &amp; Personal Skills</span>
+          <h2 class="section-title">What I Work &amp; Learn With</h2>
+          <p class="section-subtitle">A transparent overview of my current toolkit, developmental stack, and problem-solving mindset.</p>
+        </div>
+
+        <!-- Filter navigation tabs -->
+        <div class="skills-filter-nav reveal-on-scroll" role="tablist" aria-label="Skills Category Filter">
+          <button class="filter-tab active" data-target="all" role="tab" aria-selected="true">All Skills</button>
+          <button class="filter-tab" data-target="programming" role="tab" aria-selected="false">Programming</button>
+          <button class="filter-tab" data-target="tools" role="tab" aria-selected="false">Technologies &amp; Tools</button>
+          <button class="filter-tab" data-target="personal" role="tab" aria-selected="false">Personal Skills</button>
+          <button class="filter-tab" data-target="learning" role="tab" aria-selected="false">Currently Learning</button>
+        </div>
+
+        <!-- Skills grid -->
+        <div class="skills-master-grid">
+
+          <!-- 1. Programming Category -->
+          <div class="skill-category-block" data-category="programming">
+            <div class="category-header">
+              <span class="category-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </span>
+              <h3 class="category-heading">Programming</h3>
+            </div>
+
+            <div class="skill-cards-grid">
+              
+              <!-- Python Card -->
+              <div class="skill-item-card reveal-on-scroll">
+                <div class="skill-card-top">
+                  <div class="skill-title-wrap">
+                    <span class="skill-tag-pill">Language</span>
+                    <h4 class="skill-name">Python</h4>
+                  </div>
+                  <span class="skill-level-note">Active Focus</span>
+                </div>
+                <ul class="skill-bullet-list">
+                  <li>Basic programming knowledge</li>
+                  <li>Understanding core programming concepts</li>
+                  <li>Writing and experimenting with Python programs</li>
+                </ul>
+              </div>
+
+              <!-- HTML Card -->
+              <div class="skill-item-card reveal-on-scroll">
+                <div class="skill-card-top">
+                  <div class="skill-title-wrap">
+                    <span class="skill-tag-pill">Markup</span>
+                    <h4 class="skill-name">HTML</h4>
+                  </div>
+                  <span class="skill-level-note">Fundamentals</span>
+                </div>
+                <ul class="skill-bullet-list">
+                  <li>Learning webpage structure &amp; semantics</li>
+                  <li>Working with HTML elements and templates</li>
+                </ul>
+              </div>
+
+              <!-- CSS Card -->
+              <div class="skill-item-card reveal-on-scroll">
+                <div class="skill-card-top">
+                  <div class="skill-title-wrap">
+                    <span class="skill-tag-pill">Styling</span>
+                    <h4 class="skill-name">CSS</h4>
+                  </div>
+                  <span class="skill-level-note">Styling</span>
+                </div>
+                <ul class="skill-bullet-list">
+                  <li>Exploring webpage styling and layouts</li>
+                  <li>Responsive design &amp; box-model principles</li>
+                </ul>
+              </div>
+
+              <!-- JavaScript Card -->
+              <div class="skill-item-card reveal-on-scroll">
+                <div class="skill-card-top">
+                  <div class="skill-title-wrap">
+                    <span class="skill-tag-pill">Scripting</span>
+                    <h4 class="skill-name">JavaScript</h4>
+                  </div>
+                  <span class="skill-level-note">Exploration</span>
+                </div>
+                <ul class="skill-bullet-list">
+                  <li>Exploring interactive web development</li>
+                  <li>DOM manipulation &amp; client-side dynamics</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- 2. Technologies & Tools Category -->
+          <div class="skill-category-block" data-category="tools">
+            <div class="category-header">
+              <span class="category-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </span>
+              <h3 class="category-heading">Technologies &amp; Tools</h3>
+            </div>
+
+            <div class="skill-cards-grid">
+              
+              <!-- Django -->
+              <div class="skill-item-card reveal-on-scroll">
+                <div class="skill-card-top">
+                  <div class="skill-title-wrap">
+                    <span class="skill-tag-pill">Backend Framework</span>
+                    <h4 class="skill-name">Django</h4>
+                  </div>
+                </div>
+                <ul class="skill-bullet-list">
+                  <li>Exploring Python-based web application development</li>
+                  <li>Understanding MVC / MVT architecture</li>
+                </ul>
+              </div>
+
+              <!-- GitHub -->
+              <div class="skill-item-card reveal-on-scroll">
+                <div class="skill-card-top">
+                  <div class="skill-title-wrap">
+                    <span class="skill-tag-pill">Version Control</span>
+                    <h4 class="skill-name">GitHub</h4>
+                  </div>
+                </div>
+                <ul class="skill-bullet-list">
+                  <li>Exploring repositories, source code &amp; development resources</li>
+                  <li>Git workflows and project version tracking</li>
+                </ul>
+              </div>
+
+              <!-- AI Tools -->
+              <div class="skill-item-card reveal-on-scroll">
+                <div class="skill-card-top">
+                  <div class="skill-title-wrap">
+                    <span class="skill-tag-pill">Augmentation</span>
+                    <h4 class="skill-name">AI Tools</h4>
+                  </div>
+                </div>
+                <ul class="skill-bullet-list">
+                  <li>Exploring AI-powered applications &amp; development tools</li>
+                  <li>Leveraging LLMs for conceptual clarity and exploration</li>
+                </ul>
+              </div>
+
+              <!-- Google Antigravity -->
+              <div class="skill-item-card reveal-on-scroll">
+                <div class="skill-card-top">
+                  <div class="skill-title-wrap">
+                    <span class="skill-tag-pill">AI Environment</span>
+                    <h4 class="skill-name">Google Antigravity</h4>
+                  </div>
+                </div>
+                <ul class="skill-bullet-list">
+                  <li>Exploring AI-assisted development workflows</li>
+                  <li>Agentic pair programming and automated execution</li>
+                </ul>
+              </div>
+
+              <!-- Cursor -->
+              <div class="skill-item-card reveal-on-scroll">
+                <div class="skill-card-top">
+                  <div class="skill-title-wrap">
+                    <span class="skill-tag-pill">Editor</span>
+                    <h4 class="skill-name">Cursor</h4>
+                  </div>
+                </div>
+                <ul class="skill-bullet-list">
+                  <li>Exploring AI-assisted coding and software development</li>
+                  <li>Accelerated learning cycles through codebase context</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- 3. Personal Skills & 4. Currently Learning Split -->
+          <div class="skills-two-column-row">
+            
+            <!-- Personal Skills -->
+            <div class="skill-category-block" data-category="personal">
+              <div class="category-header">
+                <span class="category-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                </span>
+                <h3 class="category-heading">Personal Skills</h3>
+              </div>
+
+              <div class="chips-cloud reveal-on-scroll">
+                <div class="personal-chip">
+                  <span class="chip-dot"></span>
+                  <div class="chip-content">
+                    <strong>Curiosity &amp; Self-Learning</strong>
+                    <span>Self-directed study and deep conceptual probing</span>
+                  </div>
+                </div>
+                <div class="personal-chip">
+                  <span class="chip-dot"></span>
+                  <div class="chip-content">
+                    <strong>Logical Thinking</strong>
+                    <span>Systematic reasoning and step-by-step deduction</span>
+                  </div>
+                </div>
+                <div class="personal-chip">
+                  <span class="chip-dot"></span>
+                  <div class="chip-content">
+                    <strong>Problem-Solving</strong>
+                    <span>Deconstructing ambiguous challenges calmly</span>
+                  </div>
+                </div>
+                <div class="personal-chip">
+                  <span class="chip-dot"></span>
+                  <div class="chip-content">
+                    <strong>Creative Exploration</strong>
+                    <span>Willingness to experiment with novel ideas</span>
+                  </div>
+                </div>
+                <div class="personal-chip">
+                  <span class="chip-dot"></span>
+                  <div class="chip-content">
+                    <strong>Adaptability</strong>
+                    <span>Quick to adjust to new tools, paradigms, and stacks</span>
+                  </div>
+                </div>
+                <div class="personal-chip">
+                  <span class="chip-dot"></span>
+                  <div class="chip-content">
+                    <strong>Strategic Thinking</strong>
+                    <span>Long-term foresight inspired by chess principles</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Currently Learning -->
+            <div class="skill-category-block" data-category="learning">
+              <div class="category-header">
+                <span class="category-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 14 14"></polyline>
+                  </svg>
+                </span>
+                <h3 class="category-heading">Currently Learning</h3>
+              </div>
+
+              <div class="learning-list-wrapper reveal-on-scroll">
+                <div class="learning-track-item">
+                  <div class="track-indicator">
+                    <span class="track-num">01</span>
+                    <span class="track-bar"></span>
+                  </div>
+                  <div class="track-info">
+                    <h4 class="track-title">Web Development</h4>
+                    <p class="track-desc">Structuring modern layouts, standard DOM behavior, and semantic accessible architecture.</p>
+                  </div>
+                </div>
+
+                <div class="learning-track-item">
+                  <div class="track-indicator">
+                    <span class="track-num">02</span>
+                    <span class="track-bar"></span>
+                  </div>
+                  <div class="track-info">
+                    <h4 class="track-title">Python Application Development</h4>
+                    <p class="track-desc">Writing clean Python scripts, exploring data structures, and connecting code with APIs.</p>
+                  </div>
+                </div>
+
+                <div class="learning-track-item">
+                  <div class="track-indicator">
+                    <span class="track-num">03</span>
+                    <span class="track-bar"></span>
+                  </div>
+                  <div class="track-info">
+                    <h4 class="track-title">Modern Development Tools</h4>
+                    <p class="track-desc">Leveraging Git, next-generation editors, terminal tooling, and AI coding companions.</p>
+                  </div>
+                </div>
+
+                <div class="learning-track-item">
+                  <div class="track-indicator">
+                    <span class="track-num">04</span>
+                    <span class="track-bar"></span>
+                  </div>
+                  <div class="track-info">
+                    <h4 class="track-title">Practical Programming Concepts</h4>
+                    <p class="track-desc">Bridging textbook theory with pragmatic coding, clean architecture, and debugging.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==============================================
+         4. PROJECTS / EXPLORATION JOURNEY
+         ============================================== -->
+    <section id="projects" class="section-padding">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">04 / Projects &amp; Explorations</span>
+          <h2 class="section-title">My Project Journey</h2>
+          <p class="section-subtitle">An honest, forward-looking roadmap of concepts in incubation and areas under active exploration.</p>
+        </div>
+
+        <!-- Authentic Statement Banner -->
+        <div class="journey-manifesto-card reveal-on-scroll">
+          <div class="manifesto-badge">
+            <span class="pulse-indicator"></span>
+            <span>LEARNING &amp; EXPLORATION STAGE</span>
+          </div>
+          <div class="manifesto-content">
+            <p class="manifesto-primary">
+              I'm currently in the learning and exploration stage of my development journey.
+            </p>
+            <p class="manifesto-secondary">
+              I haven't published any completed projects yet, but I'm continuously developing my knowledge and exploring ideas that I would like to turn into real applications.
+            </p>
+          </div>
+        </div>
+
+        <!-- Areas I Want to Explore Grid -->
+        <div class="subheading-wrap reveal-on-scroll">
+          <h3 class="subheading-serif">Areas I Want to Explore</h3>
+          <span class="subheading-note">Project blueprints currently taking shape</span>
+        </div>
+
+        <div class="exploration-cards-grid">
+          
+          <!-- Area 1: Web Development -->
+          <article class="exploration-card reveal-on-scroll">
+            <div class="exploration-card-header">
+              <div class="blueprint-number">Blueprint 01</div>
+              <span class="status-tag in-study">In Study</span>
+            </div>
+            <h4 class="exploration-card-title">Web Development</h4>
+            <p class="exploration-card-description">
+              Exploring how to create modern, responsive, and interactive websites. Learning responsive layouts, accessible typography, state management, and intuitive user experiences.
+            </p>
+            <div class="exploration-spec-list">
+              <span class="spec-chip">Semantic HTML5</span>
+              <span class="spec-chip">Modern CSS Grid</span>
+              <span class="spec-chip">Vanilla JS Dynamics</span>
+              <span class="spec-chip">Responsive UX</span>
+            </div>
+            <div class="exploration-card-footer">
+              <span class="footer-note">Planned milestone: Interactive web utilities</span>
+            </div>
+          </article>
+
+          <!-- Area 2: Artificial Intelligence -->
+          <article class="exploration-card reveal-on-scroll delay-1">
+            <div class="exploration-card-header">
+              <div class="blueprint-number">Blueprint 02</div>
+              <span class="status-tag in-study">In Study</span>
+            </div>
+            <h4 class="exploration-card-title">Artificial Intelligence</h4>
+            <p class="exploration-card-description">
+              Understanding AI technologies and exploring how they can be used in practical applications. Investigating prompt design, agentic systems, and practical API integrations.
+            </p>
+            <div class="exploration-spec-list">
+              <span class="spec-chip">LLM Fundamentals</span>
+              <span class="spec-chip">API Integrations</span>
+              <span class="spec-chip">AI Dev Tools</span>
+              <span class="spec-chip">Practical Automation</span>
+            </div>
+            <div class="exploration-card-footer">
+              <span class="footer-note">Planned milestone: AI-assisted study companion</span>
+            </div>
+          </article>
+
+          <!-- Area 3: Software Development -->
+          <article class="exploration-card reveal-on-scroll delay-2">
+            <div class="exploration-card-header">
+              <div class="blueprint-number">Blueprint 03</div>
+              <span class="status-tag in-study">In Study</span>
+            </div>
+            <h4 class="exploration-card-title">Software Development</h4>
+            <p class="exploration-card-description">
+              Learning how applications are designed, developed, and improved. Focusing on clean code practices, modular architecture, algorithmic efficiency, and iterative debugging.
+            </p>
+            <div class="exploration-spec-list">
+              <span class="spec-chip">Python Architecture</span>
+              <span class="spec-chip">Data Modeling</span>
+              <span class="spec-chip">Git Workflows</span>
+              <span class="spec-chip">Clean Code</span>
+            </div>
+            <div class="exploration-card-footer">
+              <span class="footer-note">Planned milestone: Full-stack CRUD tool with Django</span>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Coming Soon Callout -->
+        <div class="coming-soon-banner reveal-on-scroll">
+          <div class="coming-soon-icon">✦</div>
+          <div class="coming-soon-text">
+            <h4 class="coming-soon-heading">Coming Soon</h4>
+            <p class="coming-soon-sub">
+              This section will gradually grow as I complete my first projects and experiments. Watch this space as code repositories and live demonstrations are linked!
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==============================================
+         5. EDUCATION & PHILOSOPHY
+         ============================================== -->
+    <section id="education" class="section-padding bg-alt">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">05 / Education &amp; Growth</span>
+          <h2 class="section-title">Academic Background</h2>
+          <p class="section-subtitle">Building disciplined engineering fundamentals alongside proactive, self-directed exploration.</p>
+        </div>
+
+        <div class="education-timeline-grid">
+          
+          <!-- Academic degree card -->
+          <div class="education-card reveal-on-scroll">
+            <div class="edu-top-row">
+              <div class="edu-badge">Degree Track</div>
+              <span class="edu-period">In Progress</span>
+            </div>
+            
+            <h3 class="edu-degree-title">Undergraduate Engineering</h3>
+            
+            <div class="edu-institution-info">
+              <p class="edu-college">BGS College of Engineering and Technology</p>
+            </div>
+
+            <p class="edu-summary">
+              Currently pursuing an engineering degree. My academic journey is helping me develop technical knowledge, analytical thinking, and problem-solving abilities.
+            </p>
+
+            <div class="edu-competencies">
+              <span class="comp-tag">Analytical Thinking</span>
+              <span class="comp-tag">Engineering Mathematics</span>
+              <span class="comp-tag">Core Computing Principles</span>
+              <span class="comp-tag">Systematic Problem Solving</span>
+            </div>
+          </div>
+
+          <!-- Learning Beyond Academics Card -->
+          <div class="education-card beyond-card reveal-on-scroll delay-1">
+            <div class="edu-top-row">
+              <div class="edu-badge badge-terracotta">Independent Study</div>
+              <span class="edu-period">Continuous &bull; Self-Driven</span>
+            </div>
+
+            <h3 class="edu-degree-title">Learning Beyond Academics</h3>
+
+            <p class="edu-summary">
+              Apart from academic studies, I spend time exploring programming, AI tools, web development, and other technologies through independent learning and experimentation.
+            </p>
+
+            <blockquote class="edu-quote">
+              "I believe learning should continue beyond classrooms."
+            </blockquote>
+
+            <div class="study-habits">
+              <div class="habit-item">
+                <span class="habit-bullet">&check;</span>
+                <span>Self-paced tutorials, documentation reading, and conceptual deep-dives</span>
+              </div>
+              <div class="habit-item">
+                <span class="habit-bullet">&check;</span>
+                <span>Testing open-source tools, modern AI models, and coding environments</span>
+              </div>
+              <div class="habit-item">
+                <span class="habit-bullet">&check;</span>
+                <span>Hands-on experimentation with small scripts and layout prototypes</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==============================================
+         6. ACHIEVEMENTS & CERTIFICATIONS
+         ============================================== -->
+    <section id="achievements" class="section-padding">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">06 / Achievements &amp; Milestones</span>
+          <h2 class="section-title">Achievements &amp; Certifications</h2>
+          <p class="section-subtitle">Dedicated to gradual, grounded progression and authentic skill acquisition.</p>
+        </div>
+
+        <div class="achievements-card reveal-on-scroll">
+          <div class="achievements-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="8" r="7"></circle>
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+            </svg>
+          </div>
+          <div class="achievements-body">
+            <h3 class="achievements-headline">Focused on Knowledge &amp; Hands-on Practice</h3>
+            <p class="achievements-text">
+              This section will be updated as I complete certifications, participate in competitions, and achieve important milestones.
+            </p>
+            <p class="achievements-note">
+              I'm currently focused on developing my knowledge and gaining practical experience.
+            </p>
+          </div>
+          <div class="milestones-timeline-preview">
+            <div class="preview-step active">
+              <span class="step-dot"></span>
+              <span class="step-label">Foundations (Current)</span>
+            </div>
+            <div class="preview-step">
+              <span class="step-dot"></span>
+              <span class="step-label">Certifications</span>
+            </div>
+            <div class="preview-step">
+              <span class="step-dot"></span>
+              <span class="step-label">Hackathons</span>
+            </div>
+            <div class="preview-step">
+              <span class="step-dot"></span>
+              <span class="step-label">Published Projects</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==============================================
+         7. CONTACT SECTION
+         ============================================== -->
+    <section id="contact" class="section-padding bg-alt">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">07 / Contact &amp; Network</span>
+          <h2 class="section-title">Let's Connect!</h2>
+          <p class="section-subtitle">I'm always interested in connecting with people who enjoy technology, programming, innovation, and learning.</p>
+        </div>
+
+        <div class="contact-layout-grid">
+          
+          <!-- Contact Narrative & Message -->
+          <div class="contact-narrative reveal-on-scroll">
+            <div class="paper-card contact-intro-card">
+              <h3 class="card-title-serif">Always Open for Thoughtful Conversations</h3>
+              <p class="contact-desc">
+                Whether you want to share an idea, discuss technology, discuss chess strategies, or simply connect, feel free to reach out.
+              </p>
+              <p class="contact-closing">
+                <strong>Looking forward to connecting!</strong>
+              </p>
+
+              <!-- Personal Philosophy Box (Prominent) -->
+              <div class="personal-philosophy-box">
+                <span class="philosophy-label">PERSONAL PHILOSOPHY</span>
+                <blockquote class="philosophy-quote">
+                  "Stay curious, keep exploring, and never stop learning."
+                </blockquote>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Channels List -->
+          <div class="contact-channels reveal-on-scroll delay-1">
+            
+            <!-- Email Card with 1-click copy -->
+            <div class="channel-card">
+              <div class="channel-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="channel-content">
+                <span class="channel-name">Email</span>
+                <span class="channel-val" id="display-email">mohanofficial593@gmail.com</span>
+              </div>
+              <div class="channel-action">
+                <button class="btn-copy" id="copy-email-btn" title="Copy email address" aria-label="Copy email">
+                  <span class="copy-text">Copy</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- GitHub Card -->
+            <a href="https://github.com/mohan-25-7" target="_blank" rel="noopener noreferrer" class="channel-card link-card" id="github-link">
+              <div class="channel-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </div>
+              <div class="channel-content">
+                <span class="channel-name">GitHub</span>
+                <span class="channel-val">github.com/mohan-25-7</span>
+              </div>
+              <div class="channel-action">
+                <span class="link-arrow">&nearr;</span>
+              </div>
+            </a>
+
+            <!-- LinkedIn Card -->
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="channel-card link-card" id="linkedin-link">
+              <div class="channel-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </div>
+              <div class="channel-content">
+                <span class="channel-name">LinkedIn</span>
+                <span class="channel-val">Connect on LinkedIn</span>
+              </div>
+              <div class="channel-action">
+                <span class="link-arrow">&nearr;</span>
+              </div>
+            </a>
+
+            <!-- Location Card -->
+            <div class="channel-card">
+              <div class="channel-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="channel-content">
+                <span class="channel-name">Location</span>
+                <span class="channel-val">Bengaluru, Karnataka, India</span>
+              </div>
+              <div class="channel-action">
+                <span class="static-badge">IST (UTC+5:30)</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==============================================
+       SITE FOOTER
+       ============================================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-logo">✦</span>
+        <span class="footer-copyright">&copy; <span id="current-year"></span> Mohan C. All rights reserved.</span>
+      </div>
+      <div class="footer-center">
+        <span class="footer-tagline">Think &bull; Explore &bull; Learn &bull; Create</span>
+      </div>
+      <div class="footer-right">
+        <a href="#home" class="back-to-top" aria-label="Back to top">
+          <span>Back to Top</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container for interactive feedback -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <!-- Main JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
+
